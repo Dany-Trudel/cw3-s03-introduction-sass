@@ -8,50 +8,18 @@
 
 // SETTINGS
 // Contient les variables sur les polices, les définitions de couleurs, les définitions de  grandeurs,   etc.
-
-
+@import "settings/font";
+@import "settings/colors";
+@import "settings/spacing";
 
 
 // GENERIC
 // Permet de réinitialiser les CSS et de changer le modèle de boîte en box-sizing: border-box
 
+@import "normalize";
+@import "generic/reset";
 
 
-
-// ELEMENTS
-// Modification des styles généraux de la page. Ce sont les styles qui seront généralement hérités par les éléments de la page.
-
-
-
-// COMPONENTS
-// Composants d'interface utilisateur spécifiques.
-// C’est là que la majorité de notre travail a lieu.
-
-
-
-
-// UTILITIES
-// Utilitaires et classes auxiliaires avec possibilité de remplacer tout ce qui précède, par exemple masquer les éléments de la page
-
-
-/*---------------------- Settings ----------------------*/
-
-:root {
-  --font-primaire: 'Rubik', sans-serif;
-  --font-secondaire: 'Expletus Sans', cursive;
-
-  --couleur-primaire: #FFC107;
-
-  --couleur-noir: #222;
-  --couleur-blanc: #fff;
-
-  --marge-grand: 20px;
-  --marge-petit: 10px;
-}
-
-/*---------------------- Generic ----------------------*/
-
-/* Mettre la ligne universelle pour le box-sizing */
 *, *::before, *::after {
   box-sizing: border-box;
 }
@@ -63,7 +31,10 @@ h1, h2 {
 }
 
 
-/*---------------------- Elements ----------------------*/
+
+// ELEMENTS
+// Modification des styles généraux de la page. Ce sont les styles qui seront généralement hérités par les éléments de la page.
+
 body {
   font-family: var(--font-primaire);
   font-size: 18px;
@@ -94,8 +65,9 @@ h2 {
 }
 
 
-
-/*---------------------- Components ----------------------*/
+// COMPONENTS
+// Composants d'interface utilisateur spécifiques.
+// C’est là que la majorité de notre travail a lieu.
 
 .conteneur {
   margin: 0 auto;
@@ -194,6 +166,11 @@ h2 {
   color: var(--couleur-blanc);;
   padding: 20px 0;
 }
-/*---------------------- Utilities ----------------------*/
+
+
+// UTILITIES
+// Utilitaires et classes auxiliaires avec possibilité de remplacer tout ce qui précède, par exemple masquer les éléments de la page
+
+
 
 
